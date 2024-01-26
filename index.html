@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/255269bd13.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="registration_form">
+        <h1>Register Yourself!</h1>
+        <form id="my_form">
+            <div class="form">
+                <i class="fa-solid fa-user"></i> 
+                <input type="text" placeholder="User Name" class="input" id="username" required > <br>
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="E-mail" class="input" id="email" required> <br>
+                <div class="password">
+                    <i class="fa-solid fa-lock"></i> 
+                    <input type="password" placeholder="Password" class="input" id="password" required><br>
+                </div>
+                <div class="hover_text">Set strong password (A-Z,a-z,0-9,@,#)</div>
+            </div>
+            <input type="checkbox" id="checkbox"> <label>I do accept the <a href="#">Terms and conditions.</a></label>
+            <button onclick="allClear()">REGISTER NOW</button>
+        </form>
+    </div>
+
+    <script>
+        function allClear() {
+          document.getElementById("my_form").reset();
+        }
+    </script>
+</body>
+</html>
